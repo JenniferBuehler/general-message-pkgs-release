@@ -1,0 +1,13 @@
+Source: ros-indigo-object-msgs
+Section: misc
+Priority: extra
+Maintainer: Jennifer Buehler <jennifer.e.buehler@gmail.com>
+Build-Depends: debhelper (>= 9.0.0), ros-indigo-catkin, ros-indigo-geometry-msgs, ros-indigo-message-generation, ros-indigo-object-recognition-msgs, ros-indigo-shape-msgs, ros-indigo-std-msgs
+Homepage: 
+Standards-Version: 3.9.2
+
+Package: ros-indigo-object-msgs
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, ros-indigo-geometry-msgs, ros-indigo-message-runtime, ros-indigo-object-recognition-msgs, ros-indigo-shape-msgs, ros-indigo-std-msgs
+Description: Provides a few basic messages about object geometry, pose and other details.
+ Strongly inspired by moveit_msgs/CollisionObject.msg, so these message types are largely compatible. This message package was creates to enable a MoveIt-compatible, but not MoveIt!-dependable interface for other ROS packages dealing with object information.
